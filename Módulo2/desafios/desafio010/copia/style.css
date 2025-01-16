@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fonte/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+body {
+    margin: 0px;
+    background-color: #E7E5C1;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, #229052, #023C1A);
+    height: 300px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+h1#titulo {
+    font-family: 'Bebas Neue', Arial, Helvetica;
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-top: 15px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+}
+
+h2#subtitulo {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 95px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+}
+
+nav > a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #95DBB2;
+    font-size: 18px;
+    text-align: left;
+    padding: 29px 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    transition: background-color 0.5s, opacity 0.3s, color 0.3s;
+}
+
+nav > a:hover {
+    background-color: #248C53;
+    color: rgb(37, 44, 37);
+}
+
+nav > a:active {
+    opacity: 0.6;
+}
+
+.principal {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+.titulo-noticia {
+    font-family: idroid;
+    color: #0C291B;
+    
+}

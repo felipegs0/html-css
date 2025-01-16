@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fonte/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #E7E5C1;
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, #229052, #023C1A);
+    padding: 0px 10px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+p {
+    font-family: arial;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.citacao {
+    color: #3F795A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.margem {
+    text-indent: 20px;
+}
+
+h1#titulo {
+    font-family: 'Bebas Neue', Arial, Helvetica;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+}
+
+h2#subtitulo {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 95px;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap; /* Permite quebrar as linhas em telas menores */
+    gap: 5px;
+}
+
+nav > a {
+    text-decoration: none;
+    line-height: 1.8;
+    text-align: center;
+    font-family: sans-serif;
+    color: #95DBB2;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.616);
+    border-radius: 5px;
+    transition: background-color 0.5s, opacity 0.3s, color 0.3s;
+}
+
+nav > a:hover {
+    background-color: #248C53;
+    color: rgb(37, 44, 37);
+}
+
+nav > a:active {
+    opacity: 0.6;
+}
+
+.principal {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+@media /* Celulares */ (max-width: 768px) and (orientation: portrait) {
+    .principal {
+        margin: 0px;
+    }
+}
+
+@media /* Tabletes e notebooks menores */ (min-width: 769px) and (max-width: 1279px) {
+    .principal {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+@media /* Notebooks maiores e computadores */ (min-width: 1280px) {
+    .principal {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+.titulo-noticia {
+    font-family: idroid;
+    color: #2F6B49;
+}
+
+.titulo-noticia2 {
+    font-family: idroid;
+    color: #2F6B49;
+    background-image: linear-gradient(to right, #C8ECD8, white);
+    border-radius: 6px;
+    text-indent: 10px;
+}
+
+.imagens {
+    display: inline;
+}
+
+.dan {
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+.dan-small {
+    width: 60%;
+    margin: auto;
+    display: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .dan {
+        display: none;
+    }
+    .dan-small {
+        display: block;
+    }
+}
+
+.irina {
+    width: 85%;
+    margin: auto;
+    display: block;
+    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.5);
+}
+
+.irina-small {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 0px 6px 1px rgb(0, 0, 0, 0.5);
+    display: none;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .irina {
+        display: none;
+    }
+    .irina-small {
+        display: block;
+    }
+}
+
+.bugdroid {
+    width: 35%;
+    margin: auto;
+    display: block;
+}
+
+.video-div {
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #1A5C38;
+    padding: 20px;
+    
+}
+
+.video {
+    display: block;
+    margin: auto;
+    width: 100%;
+    box-shadow: 0px 0px 6px 2px rgb(0, 0, 0, 0.5);
+}
+
+@media (min-width:1280px) {
+    .video {
+        width: 50%;
+    }
+}
+
+.extra {
+    background-color: #C5EBD6;
+    border-radius: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.5);
+}
+
+.titulo-extra {
+    font-family: arial;
+    color: white;
+    background-color: #2FA866;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px 12px 0px 0px;;
+}
+
+.texto-extra {
+    padding: 15px;
+    padding-top: 10px;
+    text-indent: 20px;
+    font-size: 15px;
+}
+
+.lista-div {
+    display: inline-block;
+    width: 300px;
+}
+
+.lista {
+    list-style: none;
+    padding-left: 15px;
+    font-family: arial;
+}
+
+.lista-div2 {
+    display: inline-block;
+    margin-left: 100px;
+}
+
+@media (min-width: 1280px) {
+    .lista-div2 {
+        margin-left: 250px;
+    }
+}
+
+.lista2 {
+    list-style: none;
+    font-family: arial;
+}
+
+.fim-div {
+    background-color: #1A5C38;
+    padding-bottom: 10px;
+}
+
+.fim {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 10px;
+    display: block;
+}
+
+fim2 {
+    font-weight: bold;
+}
