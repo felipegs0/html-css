@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        iframe {
+            height: 400px;
+            width: 95vw;
+            margin: auto;
+            display: block;
+            border: 1px, solid, black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes com multiplos iframe na mesma página</h1>
+    <ul>
+        <a href="paginas-extras/pagina001.html" target="frame">
+            <li>Página 01</li>
+        </a>
+        <a href="paginas-extras/página002.html" target="frame">
+            <li>Página 02</li>
+        </a>
+        <a href="paginas-extras/página003.html" target="frame">
+            <li>Página 03</li>
+        </a>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsa minima tempora aut alias necessitatibus quibusdam provident quod laudantium! Cumque nihil possimus rerum alias placeat? Fugit explicabo officiis aliquam nobis.
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aliquam reprehenderit id voluptatibus exercitationem, quod mollitia ex, reiciendis accusamus consectetur praesentium pariatur nemo similique. Repellendus, et eos? Blanditiis, sit repellat.</p>
+    </p>
+    <iframe src="" frameborder="0" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore magni assumenda consectetur explicabo quia voluptates, laborum dolores asperiores, exercitationem suscipit sint cum totam accusamus eaque laboriosam quos rerum aspernatur sapiente!</p>"></iframe>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia excepturi porro sed similique sit doloremque, accusantium, error quis, architecto ex quasi nesciunt modi quam magni cupiditate. Quas rerum officia ullam?</p>
+
+
+</body>
+</html>
