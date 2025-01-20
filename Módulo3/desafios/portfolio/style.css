@@ -52,14 +52,8 @@ section#telefone {
     transform: translate(-50%, -50%);
 }
 
-img#youtube-site {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
 iframe {
     position: relative;
-    
     top: 80px;
     left: 22px;
     width: 267px;
